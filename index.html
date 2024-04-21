@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Flores para mi princesa &lt;3</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@1&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos para el cuerpo del documento */
+        body {
+            display: flex; /* Utiliza el modelo de diseño flexbox */
+            justify-content: center; /* Centra horizontalmente los elementos hijos */
+            align-items: center; /* Centra verticalmente los elementos hijos */
+            height: 100vh; /* Establece la altura al 100% del viewport height */
+            margin: 0; /* Elimina cualquier margen predeterminado */
+        }
+
+        /* Estilos para el contenedor principal de inicio */
+        .Contenedor-Binicio {
+            text-align: center; /* Centra horizontalmente el contenido */
+            position: relative; /* Permite el posicionamiento relativo de los elementos secundarios */
+            top: -200px; /* Desplaza el contenedor hacia arriba en relación con su posición original */
+        }
+
+        /* Estilos para las imágenes dentro del contenedor de inicio */
+        .Contenedor-Binicio img {
+            width: 400px; /* Establece el ancho de las imágenes */
+            height: 400px; /* Establece la altura de las imágenes */
+            position: absolute; /* Permite el posicionamiento absoluto */
+            top: calc(100% + 10px); /* Ajusta el espacio entre la imagen y el botón */
+            left: 500%; /* Centra horizontalmente */
+            transform: translateX(50%); /* Centra horizontalmente */
+        }
+
+        /* Estilos para el botón dentro del contenedor de inicio */
+        .Contenedor-Binicio button {
+            font-family: monospace;
+            font-size: large;
+            transition-duration: 0.2s;
+            padding: 50px;
+            border-radius: 50px;
+            background-color: rgb(98, 211, 249);
+            color: black;
+            position: absolute;
+            width: 400px; /* Ancho del botón */
+            left: 250%; /* Centra horizontalmente */
+            transform: translateX(50%); /* Centra horizontalmente */
+            bottom: 20px; /* Ajusta la posición vertical */
+            border: 2px solid rgb(231, 72, 72);
+            cursor: pointer;
+        }
+        
+        
+    </style>
+  
+</head>
+<body>
+
+    <div class="Contenedor-Binicio">
+        <button class="Button" id="BVer"> Te hice un regalo mi amor</button>
+        <img src="im5.png" alt="Imagen de regalo"> <!-- Agrega la ruta de tu imagen aquí -->
+    </div>
+
+    <div class="Con-Emergente">
+        <div id="resultado" class="cua">
+            <p id="res">
+                Mi princesa hermosa solo quiero recordarte que eres 
+                muy especial para mí y gracias por todo y tu vales mas que todas las rosas del mundo &lt;3
+            </p>    
+            <button id="BotonCerrar" class="Button">Cerrar</button>
+        </div>
+    </div>
+
+    <div class="Con-2">
+        <h1 id="Titulo"> Elije una Opcion </h1>
+        <div class="Con">
+            <button class="Button" id="B1"> 1 Flor </button>
+            <button class="Button" id="B12"> 20 Flores :) </button>
+        </div>
+    </div>
+
+    <main class="Contenedor">
+        <canvas id="Flor" class="Flor" width="800" height="600"></canvas>
+
+        <div class="Texto">
+            <h2 id="Text">Para la novia mas Linda del Mundo TE AMOOOOOO</h2>
+        </div>
+
+    </main>
+
+    <script src="Js/app.js"></script>
+    <script src="Js/Dis.js"></script>
+</body>
+</html>
