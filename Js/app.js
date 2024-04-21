@@ -157,15 +157,15 @@ function DibujarFlorSinTallo(x, y, NumeroPetalos, RadioXPetalo, RadioYPetalo, Al
 }
 
 function CrearVarias() {
-    const numFilas = 5; // Aumentamos el número de filas para mostrar 20 flores
-    const numColumnas = 4;
+    const numFilas = 4; // Aumentamos el número de filas para mostrar 20 flores
+    const numColumnas = 5;
     const numFlores = numFilas * numColumnas;
 
     // Espaciamiento y tamaño de cada flor
     const espacioX = canvas.width / (numColumnas + 1); // Agregamos 1 al número de columnas para centrar las flores
     const espacioY = canvas.height / (numFilas + 1); // Agregamos 1 al número de filas para centrar las flores
-    const TamañoFlor = 70;
-    const Separacion = 40; // Separación entre flores
+    const TamañoFlor = 30;
+    const Separacion = 10; // Separación entre flores
 
     for (let i = 0; i < numFlores; i++) {
         const fila = Math.floor(i / numColumnas);
